@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <title>MUA Semarang | Jasa Makeup di Semarang - Elisabeth Makeup Artist</title>
+
+    <meta name="description"
+        content="Elisabeth Makeup Artist menyediakan jasa makeup di Semarang untuk wedding, wisuda, engagement, party, dan berbagai acara. Lihat portfolio dan booking MUA Semarang sekarang.">
+
+    <meta name="keywords"
+        content="MUA Semarang, jasa makeup di Semarang, makeup artist Semarang, MUA wedding Semarang, MUA wisuda Semarang, hairdo Semarang">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph untuk WhatsApp / Facebook -->
+    <meta property="og:title" content="Elisabeth Makeup Artist | MUA Semarang">
+    <meta property="og:description"
+        content="Jasa makeup di Semarang untuk wedding, wisuda, engagement dan berbagai acara.">
+    <meta property="og:type" content="website">
+
+    <!-- Schema Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Elisabeth Makeup Artist",
+        "description": "Jasa makeup di Semarang untuk wedding, wisuda, engagement dan berbagai acara.",
+        "areaServed": {
+            "@type": "City",
+            "name": "Semarang"
+        },
+        "url": "https://elisabethmua.vercel.app/",
+        "sameAs": [
+            "https://www.instagram.com/elisabethmua.id/"
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #3d3033;
+            background: #fffaf9;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 250, 249, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #eadcdd;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 16px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #8a5362;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #a85d72;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 25px 70px;
+        }
+
+        .hero-container {
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-text span {
+            color: #a85d72;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+
+        .hero-text h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.1;
+            margin: 15px 0 25px;
+            color: #4a363b;
+        }
+
+        .hero-text h1 strong {
+            color: #a85d72;
+        }
+
+        .hero-text p {
+            font-size: 17px;
+            max-width: 550px;
+            margin-bottom: 30px;
+            color: #6c5b60;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            background: #a85d72;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            background: #8d4d60;
+        }
+
+        .button-outline {
+            display: inline-block;
+            padding: 13px 24px;
+            border: 1px solid #a85d72;
+            color: #a85d72;
+            border-radius: 30px;
+            margin-left: 10px;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-photo {
+            width: 390px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 200px 200px 20px 20px;
+            background: #eadcdd;
+            box-shadow: 0 20px 50px rgba(100, 60, 70, 0.15);
+        }
+
+        /* GENERAL */
+
+        section {
+            padding: 90px 25px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: #a85d72;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .section-title h2 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            margin-top: 8px;
+            color: #4a363b;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background: #f8eeee;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 20px;
+        }
+
+        .about-text h3 {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: #6c5b60;
+        }
+
+        /* SERVICES */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 18px;
+            border: 1px solid #eee0e1;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(100, 60, 70, 0.08);
+        }
+
+        .service-card h3 {
+            font-family: Georgia, serif;
+            font-size: 23px;
+            margin-bottom: 10px;
+            color: #8a5362;
+        }
+
+        .service-card p {
+            color: #6c5b60;
+            font-size: 14px;
+        }
+
+        /* PORTFOLIO */
+
+        .portfolio {
+            background: #f8eeee;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .portfolio-item {
+            height: 350px;
+            overflow: hidden;
+            border-radius: 15px;
+            background: #eadcdd;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* PRICE */
+
+        .price-box {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            border: 1px solid #eadcdd;
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 17px 0;
+            border-bottom: 1px solid #eee0e1;
+        }
+
+        .price-row:last-child {
+            border-bottom: none;
+        }
+
+        .price {
+            color: #a85d72;
+            font-weight: bold;
+        }
+
+        /* AREA */
+
+        .area {
+            background: #f8eeee;
+            text-align: center;
+        }
+
+        .area p {
+            max-width: 700px;
+            margin: auto;
+            color: #6c5b60;
+        }
+
+        .area strong {
+            color: #8a5362;
+        }
+
+        /* FAQ */
+
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        details {
+            background: white;
+            border: 1px solid #eadcdd;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            padding: 18px 22px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        details p {
+            margin-top: 12px;
+            color: #6c5b60;
+        }
+
+        /* CTA */
+
+        .cta {
+            text-align: center;
+            background: #a85d72;
+            color: white;
+        }
+
+        .cta h2 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            margin-bottom: 25px;
+        }
+
+        .cta .button {
+            background: white;
+            color: #a85d72;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #3d3033;
+            color: white;
+            padding: 45px 25px;
+            text-align: center;
+        }
+
+        footer h3 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        .social {
+            margin-top: 15px;
+        }
+
+        .social a {
+            margin: 0 8px;
+            color: #f1cbd3;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-container,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 120px;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .profile-photo {
+                width: 280px;
+                height: 360px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .portfolio-item {
+                height: 260px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-item {
+                height: 400px;
+            }
+
+            .button-outline {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <div class="nav-container">
+
+        <a href="#" class="logo">
+            Elisabeth MUA
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#harga">Harga</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-text">
+
+            <span>MUA SEMARANG</span>
+
+            <h1>
+                Beauty that<br>
+                feels <strong>like you.</strong>
+            </h1>
+
+            <p>
+                Elisabeth Makeup Artist menyediakan
+                <strong>jasa makeup di Semarang</strong>
+                untuk wedding, wisuda, engagement,
+                party, dan berbagai acara spesial.
+            </p>
+
+            <a href="#kontak" class="button">
+                Booking Makeup
+            </a>
+
+            <a href="#portfolio" class="button-outline">
+                Lihat Portfolio
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <!-- GANTI profile.jpg DENGAN FOTO PROFIL KAMU -->
+            <img
+                src="images/profile.jpg"
+                alt="Elisabeth Makeup Artist - MUA Semarang"
+                class="profile-photo"
+            >
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ABOUT -->
+
+<section id="tentang" class="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>ABOUT ME</span>
+            <h2>Tentang Elisabeth</h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="images/profile-2.jpg"
+                    alt="Elisabeth Makeup Artist Semarang"
+                >
+
+            </div>
+
+            <div class="about-text">
+
+                <h3>Makeup untuk membuatmu merasa lebih percaya diri.</h3>
+
+                <p>
+                    Saya Elisabeth, Makeup Artist yang melayani
+                    kebutuhan makeup untuk berbagai momen spesial
+                    di Semarang dan sekitarnya.
+                </p>
+
+                <p>
+                    Setiap makeup disesuaikan dengan karakter,
+                    kebutuhan acara, dan preferensi masing-masing
+                    client agar hasilnya tetap cantik namun terasa
+                    seperti diri sendiri.
+                </p>
+
+                <p>
+                    Mulai dari makeup wisuda, wedding, engagement,
+                    party hingga berbagai acara lainnya.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="layanan">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>SERVICES</span>
+            <h2>Layanan Makeup</h2>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <h3>Wedding Makeup</h3>
+
+                <p>
+                    Makeup untuk pengantin dan acara pernikahan
+                    dengan look yang disesuaikan dengan konsep
+                    dan karakter kamu.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <h3>Makeup Wisuda</h3>
+
+                <p>
+                    Makeup wisuda Semarang untuk kamu yang ingin
+                    tampil fresh, cantik dan tetap nyaman
+                    sepanjang acara.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <h3>Party & Event</h3>
+
+                <p>
+                    Makeup untuk engagement, birthday,
+                    photoshoot, party dan berbagai acara spesial.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <h3>Hairdo</h3>
+
+                <p>
+                    Hairstyling dan hairdo yang disesuaikan
+                    dengan makeup, outfit dan konsep acara.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <h3>Makeup Hijab</h3>
+
+                <p>
+                    Makeup yang dipadukan dengan styling hijab
+                    untuk tampilan yang rapi dan elegan.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <h3>Makeup Event</h3>
+
+                <p>
+                    Jasa makeup di Semarang untuk berbagai
+                    kebutuhan event dan acara formal maupun casual.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="portfolio">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>MY WORK</span>
+
+            <h2>Portfolio Makeup</h2>
+
+        </div>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-item">
+                <img
+                    src="images/portfolio-1.jpg"
+                    alt="Hasil makeup Elisabeth MUA Semarang"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="portfolio-item">
+                <img
+                    src="images/portfolio-2.jpg"
+                    alt="Makeup wisuda Semarang oleh Elisabeth Makeup Artist"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="portfolio-item">
+                <img
+                    src="images/portfolio-3.jpg"
+                    alt="Makeup wedding Semarang oleh Elisabeth MUA"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="portfolio-item">
+                <img
+                    src="images/portfolio-4.jpg"
+                    alt="Makeup event Semarang Elisabeth Makeup Artist"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="portfolio-item">
+                <img
+                    src="images/portfolio-5.jpg"
+                    alt="Makeup natural Semarang Elisabeth MUA"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="portfolio-item">
+                <img
+                    src="images/portfolio-6.jpg"
+                    alt="Hairdo dan makeup Semarang Elisabeth MUA"
+                    loading="lazy"
+                >
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRICE -->
+
+<section id="harga">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>PRICE LIST</span>
+
+            <h2>Harga Makeup</h2>
+
+        </div>
+
+        <div class="price-box">
+
+            <div class="price-row">
+                <span>Makeup Reguler + Hairdo</span>
+                <span class="price">Mulai Rp250K</span>
+            </div>
+
+            <div class="price-row">
+                <span>Makeup Hijab</span>
+                <span class="price">Mulai Rp200K</span>
+            </div>
+
+            <div class="price-row">
+                <span>Wedding Makeup</span>
+                <span class="price">Hubungi Kami</span>
+            </div>
+
+            <div class="price-row">
+                <span>Transport</span>
+                <span class="price">Mulai Rp25K</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AREA -->
+
+<section class="area">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>AREA LAYANAN</span>
+
+            <h2>MUA Semarang & Sekitarnya</h2>
+
+        </div>
+
+        <p>
+            Elisabeth Makeup Artist melayani
+            <strong>jasa makeup di Semarang</strong>
+            dan area sekitarnya. Untuk ketersediaan
+            layanan di luar area Semarang, silakan
+            hubungi kami terlebih dahulu.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>FAQ</span>
+
+            <h2>Pertanyaan Umum</h2>
+
+        </div>
+
+        <div class="faq-container">
+
+            <details>
+
+                <summary>
+                    Apakah Elisabeth MUA melayani makeup di Semarang?
+                </summary>
+
+                <p>
+                    Ya. Elisabeth Makeup Artist menyediakan
+                    jasa makeup di Semarang untuk berbagai
+                    kebutuhan acara.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Apakah bisa booking untuk makeup wisuda?
+                </summary>
+
+                <p>
+                    Bisa. Makeup wisuda merupakan salah satu
+                    layanan yang tersedia. Sebaiknya booking
+                    dilakukan lebih awal untuk memastikan
+                    ketersediaan jadwal.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Apakah tersedia layanan hairdo?
+                </summary>
+
+                <p>
+                    Ya. Tersedia layanan hairdo yang dapat
+                    disesuaikan dengan makeup dan konsep acara.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Bagaimana cara booking?
+                </summary>
+
+                <p>
+                    Silakan hubungi Elisabeth Makeup Artist
+                    melalui WhatsApp untuk mengecek jadwal
+                    dan mendapatkan informasi booking.
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section id="kontak" class="cta">
+
+    <div class="container">
+
+        <h2>Ready to glow?</h2>
+
+        <p>
+            Yuk konsultasikan kebutuhan makeup kamu.
+        </p>
+
+        <!-- GANTI NOMOR DI BAWAH DENGAN NOMOR WHATSAPP -->
+        <a
+            href="https://wa.me/62XXXXXXXXXX"
+            class="button"
+            target="_blank"
+        >
+            Chat WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>Elisabeth Makeup Artist</h3>
+
+    <p>
+        MUA Semarang • Jasa Makeup di Semarang
+    </p>
+
+    <div class="social">
+
+        <a
+            href="https://www.instagram.com/elisabethmua.id/"
+            target="_blank"
+        >
+            Instagram
+        </a>
+
+        <a href="#">
+            TikTok
+        </a>
+
+    </div>
+
+    <p style="margin-top:20px;">
+        © 2026 Elisabeth Makeup Artist. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>

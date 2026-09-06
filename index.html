@@ -53,7 +53,7 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: #3d3033;
-            background: #fffaf9;
+            background: #120e10; /* Nuansa gelap elegan berkelas */
             line-height: 1.7;
         }
 
@@ -69,9 +69,9 @@
             top: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(255, 250, 249, 0.95);
+            background: rgba(18, 14, 16, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid #eadcdd;
+            border-bottom: 1px solid #35262a;
         }
 
         .nav-container {
@@ -87,7 +87,7 @@
             font-family: Georgia, serif;
             font-size: 22px;
             font-weight: bold;
-            color: #8a5362;
+            color: #f1cbd3;
         }
 
         .nav-links {
@@ -98,11 +98,12 @@
 
         .nav-links a {
             font-size: 14px;
+            color: #d1c2c5;
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: #a85d72;
+            color: #f1cbd3;
         }
 
         /* HERO */
@@ -112,6 +113,7 @@
             display: flex;
             align-items: center;
             padding: 120px 25px 70px;
+            background: radial-gradient(circle at top center, #2d1820 0%, #120e10 70%);
         }
 
         .hero-container {
@@ -119,59 +121,73 @@
             width: 100%;
             margin: auto;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 70px;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 50px;
             align-items: center;
         }
 
-        .hero-text span {
-            color: #a85d72;
+        .hero-badge {
+            display: inline-block;
+            background: rgba(168, 93, 114, 0.2);
+            border: 1px solid #a85d72;
+            color: #f1cbd3;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
             font-weight: bold;
-            letter-spacing: 2px;
-            font-size: 14px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
         }
 
         .hero-text h1 {
             font-family: Georgia, serif;
-            font-size: clamp(42px, 6vw, 70px);
-            line-height: 1.1;
-            margin: 15px 0 25px;
-            color: #4a363b;
+            font-size: clamp(38px, 5vw, 60px);
+            line-height: 1.15;
+            margin-bottom: 20px;
+            color: #ffffff;
         }
 
         .hero-text h1 strong {
-            color: #a85d72;
+            color: #e0829c;
         }
 
         .hero-text p {
             font-size: 17px;
             max-width: 550px;
             margin-bottom: 30px;
-            color: #6c5b60;
+            color: #c9bcbf;
         }
 
         .button {
             display: inline-block;
-            padding: 14px 25px;
-            background: #a85d72;
+            padding: 16px 30px;
+            background: linear-gradient(135deg, #e0829c 0%, #a85d72 100%);
             color: white;
             border-radius: 30px;
             font-weight: bold;
+            text-align: center;
             transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(168, 93, 114, 0.4);
         }
 
         .button:hover {
             transform: translateY(-3px);
-            background: #8d4d60;
+            box-shadow: 0 15px 30px rgba(168, 93, 114, 0.6);
         }
 
         .button-outline {
             display: inline-block;
-            padding: 13px 24px;
-            border: 1px solid #a85d72;
-            color: #a85d72;
+            padding: 15px 28px;
+            border: 1px solid #754855;
+            color: #f1cbd3;
             border-radius: 30px;
             margin-left: 10px;
+            transition: 0.3s;
+        }
+
+        .button-outline:hover {
+            border-color: #a85d72;
+            background: rgba(168, 93, 114, 0.1);
         }
 
         .hero-image {
@@ -180,12 +196,13 @@
         }
 
         .profile-photo {
-            width: 390px;
-            height: 500px;
+            width: 350px;
+            height: 450px;
             object-fit: cover;
             border-radius: 200px 200px 20px 20px;
-            background: #eadcdd;
-            box-shadow: 0 20px 50px rgba(100, 60, 70, 0.15);
+            background: #2a1f22;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            border: 2px solid #543740;
         }
 
         /* GENERAL */
@@ -205,23 +222,63 @@
         }
 
         .section-title span {
-            color: #a85d72;
+            color: #e0829c;
             font-size: 13px;
             font-weight: bold;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         .section-title h2 {
             font-family: Georgia, serif;
-            font-size: 40px;
+            font-size: 38px;
             margin-top: 8px;
-            color: #4a363b;
+            color: #ffffff;
+        }
+
+        /* PAIN POINTS (Struktur tambahan ala Fauzan untuk membangun urgensi) */
+
+        .pain-section {
+            background: #171114;
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .pain-card {
+            background: #20171b;
+            border: 1px solid #36252b;
+            padding: 24px;
+            border-radius: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .pain-card span {
+            font-size: 24px;
+        }
+
+        .pain-card h4 {
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .pain-card p {
+            color: #b3a4a7;
+            font-size: 14px;
         }
 
         /* ABOUT */
 
         .about {
-            background: #f8eeee;
+            background: #120e10;
         }
 
         .about-grid {
@@ -235,20 +292,26 @@
             width: 100%;
             max-width: 450px;
             border-radius: 20px;
+            border: 1px solid #36252b;
         }
 
         .about-text h3 {
             font-family: Georgia, serif;
-            font-size: 32px;
+            font-size: 30px;
             margin-bottom: 20px;
+            color: #ffffff;
         }
 
         .about-text p {
             margin-bottom: 15px;
-            color: #6c5b60;
+            color: #c9bcbf;
         }
 
         /* SERVICES */
+
+        .services {
+            background: #171114;
+        }
 
         .services-grid {
             display: grid;
@@ -257,34 +320,35 @@
         }
 
         .service-card {
-            background: white;
+            background: #20171b;
             padding: 30px 25px;
             border-radius: 18px;
-            border: 1px solid #eee0e1;
+            border: 1px solid #36252b;
             transition: 0.3s;
         }
 
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(100, 60, 70, 0.08);
+            border-color: #a85d72;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
         .service-card h3 {
             font-family: Georgia, serif;
-            font-size: 23px;
+            font-size: 22px;
             margin-bottom: 10px;
-            color: #8a5362;
+            color: #f1cbd3;
         }
 
         .service-card p {
-            color: #6c5b60;
+            color: #b3a4a7;
             font-size: 14px;
         }
 
         /* PORTFOLIO */
 
         .portfolio {
-            background: #f8eeee;
+            background: #120e10;
         }
 
         .portfolio-grid {
@@ -297,7 +361,8 @@
             height: 350px;
             overflow: hidden;
             border-radius: 15px;
-            background: #eadcdd;
+            background: #20171b;
+            border: 1px solid #36252b;
         }
 
         .portfolio-item img {
@@ -313,20 +378,28 @@
 
         /* PRICE */
 
+        .price-section {
+            background: #171114;
+        }
+
         .price-box {
             max-width: 700px;
             margin: auto;
-            background: white;
-            border: 1px solid #eadcdd;
+            background: #20171b;
+            border: 1px solid #36252b;
             border-radius: 20px;
             padding: 35px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
         .price-row {
             display: flex;
             justify-content: space-between;
-            padding: 17px 0;
-            border-bottom: 1px solid #eee0e1;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #36252b;
+            color: #ffffff;
+            font-size: 16px;
         }
 
         .price-row:last-child {
@@ -334,42 +407,43 @@
         }
 
         .price {
-            color: #a85d72;
+            color: #e0829c;
             font-weight: bold;
+            font-size: 18px;
         }
 
         /* AREA & MAPS SECTION */
 
         .area {
-            background: #f8eeee;
+            background: #120e10;
             text-align: center;
         }
 
         .area p {
             max-width: 700px;
             margin: auto;
-            color: #6c5b60;
+            color: #c9bcbf;
             margin-bottom: 30px;
         }
 
         .area strong {
-            color: #8a5362;
+            color: #f1cbd3;
         }
 
         .map-card {
             max-width: 600px;
             margin: 0 auto;
-            background: white;
+            background: #20171b;
             padding: 20px;
             border-radius: 20px;
-            border: 1px solid #eadcdd;
-            box-shadow: 0 10px 30px rgba(100, 60, 70, 0.05);
+            border: 1px solid #36252b;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             transition: 0.3s;
         }
 
         .map-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(100, 60, 70, 0.1);
+            border-color: #a85d72;
         }
 
         .map-img {
@@ -382,11 +456,15 @@
 
         .map-card p {
             font-size: 14px;
-            color: #6c5b60;
+            color: #b3a4a7;
             margin-bottom: 15px;
         }
 
         /* FAQ */
+
+        .faq-section {
+            background: #171114;
+        }
 
         .faq-container {
             max-width: 800px;
@@ -394,64 +472,70 @@
         }
 
         details {
-            background: white;
-            border: 1px solid #eadcdd;
+            background: #20171b;
+            border: 1px solid #36252b;
             margin-bottom: 12px;
             border-radius: 12px;
             padding: 18px 22px;
+            transition: 0.3s;
+        }
+
+        details[open] {
+            border-color: #a85d72;
         }
 
         summary {
             cursor: pointer;
             font-weight: bold;
+            color: #ffffff;
         }
 
         details p {
             margin-top: 12px;
-            color: #6c5b60;
+            color: #b3a4a7;
+            font-size: 14px;
         }
 
         /* CTA */
 
         .cta {
             text-align: center;
-            background: #a85d72;
-            color: white;
+            background: radial-gradient(circle at center, #361b23 0%, #120e10 100%);
+            border-top: 1px solid #36252b;
+            border-bottom: 1px solid #36252b;
         }
 
         .cta h2 {
             font-family: Georgia, serif;
             font-size: 42px;
             margin-bottom: 15px;
+            color: #ffffff;
         }
 
         .cta p {
-            margin-bottom: 25px;
-        }
-
-        .cta .button {
-            background: white;
-            color: #a85d72;
+            margin-bottom: 30px;
+            color: #c9bcbf;
+            font-size: 17px;
         }
 
         /* FOOTER */
 
         footer {
-            background: #3d3033;
-            color: white;
+            background: #0d0a0b;
+            color: #8c7d81;
             padding: 50px 25px;
             text-align: center;
         }
 
         footer h3 {
             font-family: Georgia, serif;
-            font-size: 25px;
+            font-size: 22px;
             margin-bottom: 10px;
+            color: #f1cbd3;
         }
 
         footer p {
             font-size: 13px;
-            opacity: 0.8;
         }
 
         .social {
@@ -460,7 +544,7 @@
 
         .social a {
             margin: 0 10px;
-            color: #f1cbd3;
+            color: #d1c2c5;
             font-size: 14px;
             transition: 0.3s;
         }
@@ -479,15 +563,13 @@
             }
 
             .hero-container,
-            .about-grid {
+            .about-grid,
+            .pain-grid {
                 grid-template-columns: 1fr;
             }
 
             .hero {
                 padding-top: 120px;
-            }
-
-            .hero-text {
                 text-align: center;
             }
 
@@ -501,8 +583,8 @@
             }
 
             .profile-photo {
-                width: 280px;
-                height: 360px;
+                width: 260px;
+                height: 340px;
             }
 
             .services-grid {
@@ -518,7 +600,7 @@
             }
 
             .section-title h2 {
-                font-size: 32px;
+                font-size: 30px;
             }
         }
 
@@ -529,12 +611,19 @@
             }
 
             .portfolio-item {
-                height: 400px;
+                height: 380px;
             }
 
             .button-outline {
                 margin-left: 0;
-                margin-top: 10px;
+                margin-top: 12px;
+                display: block;
+                width: 100%;
+            }
+
+            .button {
+                display: block;
+                width: 100%;
             }
         }
     </style>
@@ -573,7 +662,7 @@
 
         <div class="hero-text">
 
-            <span>MUA SEMARANG</span>
+            <span class="hero-badge">MUA & HAIRSTYLIST SEMARANG</span>
 
             <h1>
                 Beauty that<br>
@@ -581,20 +670,19 @@
             </h1>
 
             <p>
-                Elisabeth Makeup Artist menyediakan
-                <strong>jasa makeup di Semarang</strong>
-                untuk wedding, wisuda, engagement,
-                party, dan berbagai acara spesial. 
-                <strong>Bisa Home Service (dipanggil ke rumah atau lokasi kamu).</strong>
+                Berhenti khawatir hasil makeup ketebalan atau tidak tahan lama. Dapatkan tampilan spesial yang elegan, natural, dan tetap mencerminkan karakter asli kamu. 
+                <strong>Bisa Home Service ke rumah atau lokasi acara di Semarang.</strong>
             </p>
 
-            <a href="#kontak" class="button">
-                Booking Makeup
-            </a>
+            <div>
+                <a href="#kontak" class="button">
+                    Booking Jadwal Sekarang
+                </a>
 
-            <a href="#portfolio" class="button-outline">
-                Lihat Portfolio
-            </a>
+                <a href="#portfolio" class="button-outline">
+                    Lihat Portfolio
+                </a>
+            </div>
 
         </div>
 
@@ -611,6 +699,58 @@
     </div>
 
 </header>
+
+
+<!-- PAIN POINTS (Struktur psikologi konversi ala Fauzan Azzam) -->
+
+<section class="pain-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>KENYATAAN DI LAPANGAN</span>
+            <h2>Sering Overthinking Sebelum Hari Acara?</h2>
+        </div>
+
+        <div class="pain-grid">
+
+            <div class="pain-card">
+                <span>😟</span>
+                <div>
+                    <h4>Takut Makeup Menor / Cakey</h4>
+                    <p>Khawatir hasil akhir tidak sesuai ekspektasi, luntur di tengah acara, atau membuat wajah terlihat kaku dan tidak natural.</p>
+                </div>
+            </div>
+
+            <div class="pain-card">
+                <span>⏰</span>
+                <div>
+                    <h4>Takut Telat Datang ke Venue</h4>
+                    <p>MUA datang terlambat membuat jadwal persiapan berantakan dan bikin kamu panik sebelum naik panggung atau altar.</p>
+                </div>
+            </div>
+
+            <div class="pain-card">
+                <span>📉</span>
+                <div>
+                    <h4>Rambut & Hijab Berantakan</h4>
+                    <p>Styling rambut atau hijab gampang lepek dan rusak padahal acara baru berjalan setengah jalan.</p>
+                </div>
+            </div>
+
+            <div class="pain-card">
+                <span>✨</span>
+                <div>
+                    <h4>Solusinya: Sentuhan Profesional</h4>
+                    <p>Dihandle langsung dengan teknik, produk pilihan, dan sistem pengerjaan on-time yang rapi tanpa bikin kamu stres.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 <!-- ABOUT -->
@@ -640,21 +780,16 @@
                 <h3>Makeup untuk membuatmu merasa lebih percaya diri.</h3>
 
                 <p>
-                    Saya Elisabeth, Makeup Artist yang melayani
-                    kebutuhan makeup untuk berbagai momen spesial
-                    di Semarang dan sekitarnya.
+                    Saya Elisabeth, Makeup Artist dan Hairstylist profesional yang melayani
+                    kebutuhan makeup untuk berbagai momen spesial di Semarang dan sekitarnya.
                 </p>
 
                 <p>
-                    Setiap makeup disesuaikan dengan karakter,
-                    kebutuhan acara, dan preferensi masing-masing
-                    client agar hasilnya tetap cantik namun terasa
-                    seperti diri sendiri.
+                    Setiap sesi dirancang personal menyesuaikan bentuk wajah, karakter, tema busana, dan preferensi acara kamu agar hasilnya tetap cantik, manglingi, namun tetap terasa natural seperti diri sendiri.
                 </p>
 
                 <p>
-                    Mulai dari makeup wisuda, wedding, engagement,
-                    party hingga berbagai acara lainnya.
+                    Mulai dari wisuda, wedding, engagement, party, hingga photoshoot komersial siap ditangani secara teliti.
                 </p>
 
             </div>
@@ -668,13 +803,13 @@
 
 <!-- SERVICES -->
 
-<section id="layanan">
+<section id="layanan" class="services">
 
     <div class="container">
 
         <div class="section-title">
             <span>SERVICES</span>
-            <h2>Layanan Makeup</h2>
+            <h2>Layanan Makeup & Hairstyling</h2>
         </div>
 
         <div class="services-grid">
@@ -684,9 +819,7 @@
                 <h3>Wedding Makeup</h3>
 
                 <p>
-                    Makeup untuk pengantin dan acara pernikahan
-                    dengan look yang disesuaikan dengan konsep
-                    dan karakter kamu.
+                    Makeup pengantin eksklusif dengan look yang tahan seharian dan disesuaikan dengan konsep pernikahan impianmu.
                 </p>
 
             </div>
@@ -696,9 +829,7 @@
                 <h3>Makeup Wisuda</h3>
 
                 <p>
-                    Makeup wisuda Semarang untuk kamu yang ingin
-                    tampil fresh, cantik dan tetap nyaman
-                    sepanjang acara.
+                    Tampil fresh, anggun, dan standout di hari kelulusan tanpa khawatir luntur sepanjang sesi foto dan wisuda.
                 </p>
 
             </div>
@@ -708,19 +839,17 @@
                 <h3>Party & Event</h3>
 
                 <p>
-                    Makeup untuk engagement, birthday,
-                    photoshoot, party dan berbagai acara spesial.
+                    Pilihan tepat untuk engagement, ulang tahun, gala dinner, photoshoot, atau acara formal lainnya.
                 </p>
 
             </div>
 
             <div class="service-card">
 
-                <h3>Hairdo</h3>
+                <h3>Hairdo & Hairstyling</h3>
 
                 <p>
-                    Hairstyling dan hairdo yang disesuaikan
-                    dengan makeup, outfit dan konsep acara.
+                    Penataan rambut profesional yang rapi, kuat, dan diselaraskan secara sempurna dengan gaun dan makeup.
                 </p>
 
             </div>
@@ -730,19 +859,17 @@
                 <h3>Makeup Hijab</h3>
 
                 <p>
-                    Makeup yang dipadukan dengan styling hijab
-                    untuk tampilan yang rapi dan elegan.
+                    Kreasi lilitan hijab modern dan rapi yang dikombinasikan dengan makeup elegan untuk berbagai acara.
                 </p>
 
             </div>
 
             <div class="service-card">
 
-                <h3>Makeup Event</h3>
+                <h3>Home Service</h3>
 
                 <p>
-                    Jasa makeup di Semarang untuk berbagai
-                    kebutuhan event dan acara formal maupun casual.
+                    Praktis dan bebas repot! Tim kami siap datang langsung ke rumah, hotel, atau lokasi acara pilihanmu di Semarang.
                 </p>
 
             </div>
@@ -764,7 +891,7 @@
 
             <span>MY WORK</span>
 
-            <h2>Portfolio Makeup</h2>
+            <h2>Portfolio & Hasil Karya</h2>
 
         </div>
 
@@ -827,7 +954,7 @@
 
 <!-- PRICE -->
 
-<section id="harga">
+<section id="harga" class="price-section">
 
     <div class="container">
 
@@ -835,29 +962,29 @@
 
             <span>PRICE LIST</span>
 
-            <h2>Harga Makeup</h2>
+            <h2>Investasi Penampilan Terbaikmu</h2>
 
         </div>
 
         <div class="price-box">
 
             <div class="price-row">
-                <span>Makeup Reguler + Hairdo</span>
+                <span>Makeup Reguler + Hairdo / Hijab</span>
                 <span class="price">Mulai Rp250K</span>
             </div>
 
             <div class="price-row">
-                <span>Makeup Hijab</span>
+                <span>Makeup Wisuda Spesial</span>
                 <span class="price">Mulai Rp200K</span>
             </div>
 
             <div class="price-row">
-                <span>Wedding Makeup</span>
+                <span>Wedding Makeup (Engagement / Akad / Resepsi)</span>
                 <span class="price">Hubungi Kami</span>
             </div>
 
             <div class="price-row">
-                <span>Transport</span>
+                <span>Biaya Transport Home Service Semarang</span>
                 <span class="price">Mulai Rp25K</span>
             </div>
 
@@ -915,7 +1042,7 @@
 
 <!-- FAQ -->
 
-<section id="faq">
+<section id="faq" class="faq-section">
 
     <div class="container">
 
@@ -923,7 +1050,7 @@
 
             <span>FAQ</span>
 
-            <h2>Pertanyaan Umum</h2>
+            <h2>Pertanyaan yang Sering Diajukan</h2>
 
         </div>
 
@@ -1012,10 +1139,10 @@
 
     <div class="container">
 
-        <h2>Ready to glow?</h2>
+        <h2>Amankan Jadwalmu Sebelum Full Booked!</h2>
 
         <p>
-            Yuk konsultasikan kebutuhan makeup kamu.
+            Slot harian terbatas untuk menjaga kualitas pengerjaan. Yuk konsultasikan kebutuhan makeup acaramu sekarang.
         </p>
 
         <a
@@ -1023,7 +1150,7 @@
             class="button"
             target="_blank"
         >
-            Chat WhatsApp
+            Chat WhatsApp Sekarang 💬
         </a>
 
     </div>
@@ -1038,7 +1165,7 @@
     <h3>Elisabeth Makeup Artist</h3>
 
     <p>
-        MUA Semarang • Jasa Makeup di Semarang
+        MUA Semarang • Jasa Makeup & Hairstyling Profesional
     </p>
 
     <div class="social">

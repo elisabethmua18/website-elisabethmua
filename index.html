@@ -53,7 +53,7 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: #3d3033;
-            background: #fff6f7; /* Diubah jadi lebih cerah, lembut, dan elegan */
+            background: #fff6f7; /* Background cerah, lembut, dan elegan */
             line-height: 1.7;
         }
 
@@ -377,57 +377,37 @@
             transform: scale(1.05);
         }
 
-        /* TESTIMONIALS (Bagian Baru dari Ulasan Asli Klien) */
+        /* TESTIMONIALS SCREENSHOTS (Gaya Tampilan Screenshot GMaps) */
 
         .testimonials {
             background: #faedef;
         }
 
-        .testimonials-grid {
+        .review-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+            gap: 20px;
         }
 
-        .testimonial-card {
+        .review-card {
             background: #ffffff;
             border: 1px solid #ead0d4;
-            padding: 30px 25px;
-            border-radius: 18px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 0 4px 15px rgba(100, 60, 70, 0.04);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(100, 60, 70, 0.06);
             transition: 0.3s;
         }
 
-        .testimonial-card:hover {
+        .review-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(100, 60, 70, 0.08);
+            box-shadow: 0 12px 30px rgba(100, 60, 70, 0.12);
         }
 
-        .stars {
-            color: #f59e0b;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .testimonial-card p {
-            color: #6c5b60;
-            font-size: 14px;
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-
-        .client-info h4 {
-            color: #4a363b;
-            font-size: 15px;
-            font-weight: bold;
-        }
-
-        .client-info span {
-            color: #a85d72;
-            font-size: 12px;
+        .review-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
         }
 
         /* PRICE */
@@ -620,7 +600,7 @@
             .hero-container,
             .about-grid,
             .pain-grid,
-            .testimonials-grid {
+            .review-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1009,7 +989,7 @@
 </section>
 
 
-<!-- TESTIMONIALS (Bagian Testimoni Baru dari Ulasan Klien) -->
+<!-- TESTIMONIALS SCREENSHOTS (Ulasan Asli Google Maps) -->
 
 <section id="testimoni" class="testimonials">
 
@@ -1017,74 +997,36 @@
 
         <div class="section-title">
             <span>TESTIMONI KLIEN</span>
-            <h2>Kata Mereka yang Sudah Memakai Jasa Kami</h2>
+            <h2>Apa Kata Mereka di Google Maps?</h2>
         </div>
 
-        <div class="testimonials-grid">
+        <div class="review-grid">
 
-            <div class="testimonial-card">
-                <div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Aku jarang makeup, tapi sekalinya ketemu make up artist semarang langsung cocok. PL dan hasilnya bersahabat banget, dan buagusss hasilnya. Okelah pokoknya, luvvvv poll!"</p>
-                </div>
-                <div class="client-info">
-                    <h4>Keyla Qian</h4>
-                    <span>Klien MUA Semarang</span>
-                </div>
+            <div class="review-card">
+                <img src="images/review-1.jpg" alt="Testimoni Ulasan Google Maps Keyla Qian" loading="lazy">
             </div>
 
-            <div class="testimonial-card">
-                <div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Terima kasih ya Kak Elisabeth MUA untuk make up mamah saya bagus sekali, tahan lama juga sampe malam. Kemarin baru foto studio jam 8 malam dan make up nya masih bagus. Recommended bgtt!"</p>
-                </div>
-                <div class="client-info">
-                    <h4>Ola Novia</h4>
-                    <span>Klien Wedding / Keluarga</span>
-                </div>
+            <div class="review-card">
+                <img src="images/review-2.jpg" alt="Testimoni Ulasan Google Maps Ola Novia" loading="lazy">
             </div>
 
-            <div class="testimonial-card">
-                <div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Suka banget sama hasilnya! Request look yang bold glam buat lomba kartini dan beneran hasilnya oke banget. Kakaknya ramah banget. Yang lagi hunting MUA Semarang nggak salah pilih!"</p>
-                </div>
-                <div class="client-info">
-                    <h4>Grace Jocellyn88</h4>
-                    <span>Klien Lomba / Event</span>
-                </div>
+            <div class="review-card">
+                <img src="images/review-3.jpg" alt="Testimoni Ulasan Google Maps Grace Jocellyn" loading="lazy">
             </div>
 
-            <div class="testimonial-card">
-                <div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Demi make up disini super duper bagus banget, selesai ngalis diliatin dulu suka atau enggak. Make up nya bener-bener tahan lama anti longsor anti badai, sungguh ku jadi pd dan merasa cantik!"</p>
-                </div>
-                <div class="client-info">
-                    <h4>Farah Biananda</h4>
-                    <span>Klien Event / Pesta</span>
-                </div>
+            <div class="review-card">
+                <img src="images/review-4.jpg" alt="Testimoni Ulasan Google Maps Farah Biananda" loading="lazy">
             </div>
 
-            <div class="testimonial-card">
-                <div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Ke Semarang utk acara Sanjit, trus nanya ke ChatGPT dan diberikan nama Elisabeth utk MUA yg handal di kota Semarang. Ternyata hasilnya sesuai yg aku harapkan, flawless makeup dan hairdo sederhana!"</p>
-                </div>
-                <div class="client-info">
-                    <h4>Irma H Sinurat</h4>
-                    <span>Klien Sanjit & Event</span>
-                </div>
+            <div class="review-card">
+                <img src="images/review-5.jpg" alt="Testimoni Ulasan Google Maps Irma H Sinurat" loading="lazy">
             </div>
 
-            <div class="testimonial-card" style="background: linear-gradient(135deg, #a85d72 0%, #8a5362 100%); color: white;">
-                <div>
-                    <div class="stars" style="color: #ffd700;">⭐⭐⭐⭐⭐</div>
-                    <p style="color: #fcebefe0;">"Ingin merasakan hasil makeup yang tahan seharian, anti longsor, dan bikin kamu tampil paling percaya diri di hari spesialmu?"</p>
-                </div>
-                <div>
-                    <a href="#kontak" class="button" style="background: white; color: #8a5362; width: 100%; padding: 12px; font-size: 14px; box-shadow: none;">Booking Jadwalmu Sekarang</a>
-                </div>
+            <!-- Kartu CTA Pendukung di Grid Testimoni -->
+            <div class="review-card" style="background: linear-gradient(135deg, #a85d72 0%, #8a5362 100%); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; text-align: center;">
+                <h3 style="font-family: Georgia, serif; font-size: 20px; margin-bottom: 12px;">Ingin Merasakan Hasil yang Sama?</h3>
+                <p style="font-size: 14px; margin-bottom: 20px; color: #fcebefe0;">Yuk amankan jadwal makeup acaramu sekarang sebelum kehabisan slot.</p>
+                <a href="#kontak" class="button" style="background: white; color: #8a5362; width: 100%; padding: 12px; font-size: 14px; box-shadow: none;">Booking Jadwal Sekarang</a>
             </div>
 
         </div>

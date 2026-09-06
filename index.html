@@ -53,7 +53,7 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: #3d3033;
-            background: #120e10; /* Nuansa gelap elegan berkelas */
+            background: #fff6f7; /* Diubah jadi lebih cerah, lembut, dan elegan */
             line-height: 1.7;
         }
 
@@ -69,9 +69,9 @@
             top: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(18, 14, 16, 0.95);
+            background: rgba(255, 246, 247, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid #35262a;
+            border-bottom: 1px solid #ead0d4;
         }
 
         .nav-container {
@@ -87,7 +87,7 @@
             font-family: Georgia, serif;
             font-size: 22px;
             font-weight: bold;
-            color: #f1cbd3;
+            color: #8a5362;
         }
 
         .nav-links {
@@ -98,12 +98,12 @@
 
         .nav-links a {
             font-size: 14px;
-            color: #d1c2c5;
+            color: #6c5b60;
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: #f1cbd3;
+            color: #a85d72;
         }
 
         /* HERO */
@@ -113,7 +113,7 @@
             display: flex;
             align-items: center;
             padding: 120px 25px 70px;
-            background: radial-gradient(circle at top center, #2d1820 0%, #120e10 70%);
+            background: radial-gradient(circle at top center, #fcebefe0 0%, #fff6f7 70%);
         }
 
         .hero-container {
@@ -128,9 +128,9 @@
 
         .hero-badge {
             display: inline-block;
-            background: rgba(168, 93, 114, 0.2);
-            border: 1px solid #a85d72;
-            color: #f1cbd3;
+            background: rgba(168, 93, 114, 0.12);
+            border: 1px solid #d495a6;
+            color: #8a5362;
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 13px;
@@ -144,50 +144,49 @@
             font-size: clamp(38px, 5vw, 60px);
             line-height: 1.15;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #4a363b;
         }
 
         .hero-text h1 strong {
-            color: #e0829c;
+            color: #a85d72;
         }
 
         .hero-text p {
             font-size: 17px;
             max-width: 550px;
             margin-bottom: 30px;
-            color: #c9bcbf;
+            color: #6c5b60;
         }
 
         .button {
             display: inline-block;
             padding: 16px 30px;
-            background: linear-gradient(135deg, #e0829c 0%, #a85d72 100%);
+            background: linear-gradient(135deg, #b8697f 0%, #944b60 100%);
             color: white;
             border-radius: 30px;
             font-weight: bold;
             text-align: center;
             transition: 0.3s;
-            box-shadow: 0 10px 25px rgba(168, 93, 114, 0.4);
+            box-shadow: 0 10px 25px rgba(168, 93, 114, 0.25);
         }
 
         .button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(168, 93, 114, 0.6);
+            box-shadow: 0 15px 30px rgba(168, 93, 114, 0.4);
         }
 
         .button-outline {
             display: inline-block;
             padding: 15px 28px;
-            border: 1px solid #754855;
-            color: #f1cbd3;
+            border: 1px solid #b8697f;
+            color: #944b60;
             border-radius: 30px;
             margin-left: 10px;
             transition: 0.3s;
         }
 
         .button-outline:hover {
-            border-color: #a85d72;
-            background: rgba(168, 93, 114, 0.1);
+            background: rgba(168, 93, 114, 0.08);
         }
 
         .hero-image {
@@ -200,9 +199,9 @@
             height: 450px;
             object-fit: cover;
             border-radius: 200px 200px 20px 20px;
-            background: #2a1f22;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            border: 2px solid #543740;
+            background: #eadcdd;
+            box-shadow: 0 20px 50px rgba(100, 60, 70, 0.15);
+            border: 2px solid #dfc5ca;
         }
 
         /* GENERAL */
@@ -222,7 +221,7 @@
         }
 
         .section-title span {
-            color: #e0829c;
+            color: #a85d72;
             font-size: 13px;
             font-weight: bold;
             letter-spacing: 2px;
@@ -233,13 +232,13 @@
             font-family: Georgia, serif;
             font-size: 38px;
             margin-top: 8px;
-            color: #ffffff;
+            color: #4a363b;
         }
 
-        /* PAIN POINTS (Struktur tambahan ala Fauzan untuk membangun urgensi) */
+        /* PAIN POINTS */
 
         .pain-section {
-            background: #171114;
+            background: #faedef;
         }
 
         .pain-grid {
@@ -251,13 +250,14 @@
         }
 
         .pain-card {
-            background: #20171b;
-            border: 1px solid #36252b;
+            background: #ffffff;
+            border: 1px solid #ead0d4;
             padding: 24px;
             border-radius: 16px;
             display: flex;
             align-items: flex-start;
             gap: 15px;
+            box-shadow: 0 4px 15px rgba(100, 60, 70, 0.03);
         }
 
         .pain-card span {
@@ -265,20 +265,20 @@
         }
 
         .pain-card h4 {
-            color: #ffffff;
+            color: #4a363b;
             font-size: 16px;
             margin-bottom: 6px;
         }
 
         .pain-card p {
-            color: #b3a4a7;
+            color: #6c5b60;
             font-size: 14px;
         }
 
         /* ABOUT */
 
         .about {
-            background: #120e10;
+            background: #fff6f7;
         }
 
         .about-grid {
@@ -292,25 +292,25 @@
             width: 100%;
             max-width: 450px;
             border-radius: 20px;
-            border: 1px solid #36252b;
+            border: 1px solid #ead0d4;
         }
 
         .about-text h3 {
             font-family: Georgia, serif;
             font-size: 30px;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #4a363b;
         }
 
         .about-text p {
             margin-bottom: 15px;
-            color: #c9bcbf;
+            color: #6c5b60;
         }
 
         /* SERVICES */
 
         .services {
-            background: #171114;
+            background: #faedef;
         }
 
         .services-grid {
@@ -320,35 +320,36 @@
         }
 
         .service-card {
-            background: #20171b;
+            background: #ffffff;
             padding: 30px 25px;
             border-radius: 18px;
-            border: 1px solid #36252b;
+            border: 1px solid #ead0d4;
             transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(100, 60, 70, 0.03);
         }
 
         .service-card:hover {
             transform: translateY(-5px);
             border-color: #a85d72;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 35px rgba(100, 60, 70, 0.08);
         }
 
         .service-card h3 {
             font-family: Georgia, serif;
             font-size: 22px;
             margin-bottom: 10px;
-            color: #f1cbd3;
+            color: #8a5362;
         }
 
         .service-card p {
-            color: #b3a4a7;
+            color: #6c5b60;
             font-size: 14px;
         }
 
         /* PORTFOLIO */
 
         .portfolio {
-            background: #120e10;
+            background: #fff6f7;
         }
 
         .portfolio-grid {
@@ -361,8 +362,8 @@
             height: 350px;
             overflow: hidden;
             border-radius: 15px;
-            background: #20171b;
-            border: 1px solid #36252b;
+            background: #eadcdd;
+            border: 1px solid #ead0d4;
         }
 
         .portfolio-item img {
@@ -376,20 +377,73 @@
             transform: scale(1.05);
         }
 
+        /* TESTIMONIALS (Bagian Baru dari Ulasan Asli Klien) */
+
+        .testimonials {
+            background: #faedef;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: #ffffff;
+            border: 1px solid #ead0d4;
+            padding: 30px 25px;
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(100, 60, 70, 0.04);
+            transition: 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(100, 60, 70, 0.08);
+        }
+
+        .stars {
+            color: #f59e0b;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card p {
+            color: #6c5b60;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .client-info h4 {
+            color: #4a363b;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .client-info span {
+            color: #a85d72;
+            font-size: 12px;
+        }
+
         /* PRICE */
 
         .price-section {
-            background: #171114;
+            background: #fff6f7;
         }
 
         .price-box {
             max-width: 700px;
             margin: auto;
-            background: #20171b;
-            border: 1px solid #36252b;
+            background: #ffffff;
+            border: 1px solid #ead0d4;
             border-radius: 20px;
             padding: 35px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 10px 30px rgba(100, 60, 70, 0.05);
         }
 
         .price-row {
@@ -397,8 +451,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
-            border-bottom: 1px solid #36252b;
-            color: #ffffff;
+            border-bottom: 1px solid #f2e3e5;
+            color: #4a363b;
             font-size: 16px;
         }
 
@@ -407,7 +461,7 @@
         }
 
         .price {
-            color: #e0829c;
+            color: #a85d72;
             font-weight: bold;
             font-size: 18px;
         }
@@ -415,29 +469,29 @@
         /* AREA & MAPS SECTION */
 
         .area {
-            background: #120e10;
+            background: #faedef;
             text-align: center;
         }
 
         .area p {
             max-width: 700px;
             margin: auto;
-            color: #c9bcbf;
+            color: #6c5b60;
             margin-bottom: 30px;
         }
 
         .area strong {
-            color: #f1cbd3;
+            color: #8a5362;
         }
 
         .map-card {
             max-width: 600px;
             margin: 0 auto;
-            background: #20171b;
+            background: #ffffff;
             padding: 20px;
             border-radius: 20px;
-            border: 1px solid #36252b;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid #ead0d4;
+            box-shadow: 0 10px 30px rgba(100, 60, 70, 0.05);
             transition: 0.3s;
         }
 
@@ -456,14 +510,14 @@
 
         .map-card p {
             font-size: 14px;
-            color: #b3a4a7;
+            color: #6c5b60;
             margin-bottom: 15px;
         }
 
         /* FAQ */
 
         .faq-section {
-            background: #171114;
+            background: #fff6f7;
         }
 
         .faq-container {
@@ -472,12 +526,13 @@
         }
 
         details {
-            background: #20171b;
-            border: 1px solid #36252b;
+            background: #ffffff;
+            border: 1px solid #ead0d4;
             margin-bottom: 12px;
             border-radius: 12px;
             padding: 18px 22px;
             transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(100, 60, 70, 0.02);
         }
 
         details[open] {
@@ -487,12 +542,12 @@
         summary {
             cursor: pointer;
             font-weight: bold;
-            color: #ffffff;
+            color: #4a363b;
         }
 
         details p {
             margin-top: 12px;
-            color: #b3a4a7;
+            color: #6c5b60;
             font-size: 14px;
         }
 
@@ -500,29 +555,29 @@
 
         .cta {
             text-align: center;
-            background: radial-gradient(circle at center, #361b23 0%, #120e10 100%);
-            border-top: 1px solid #36252b;
-            border-bottom: 1px solid #36252b;
+            background: radial-gradient(circle at center, #faedef 0%, #f4dfe2 100%);
+            border-top: 1px solid #ead0d4;
+            border-bottom: 1px solid #ead0d4;
         }
 
         .cta h2 {
             font-family: Georgia, serif;
             font-size: 42px;
             margin-bottom: 15px;
-            color: #ffffff;
+            color: #4a363b;
         }
 
         .cta p {
             margin-bottom: 30px;
-            color: #c9bcbf;
+            color: #6c5b60;
             font-size: 17px;
         }
 
         /* FOOTER */
 
         footer {
-            background: #0d0a0b;
-            color: #8c7d81;
+            background: #3d3033;
+            color: #d1c2c5;
             padding: 50px 25px;
             text-align: center;
         }
@@ -564,7 +619,8 @@
 
             .hero-container,
             .about-grid,
-            .pain-grid {
+            .pain-grid,
+            .testimonials-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -644,6 +700,7 @@
             <li><a href="#tentang">Tentang</a></li>
             <li><a href="#layanan">Layanan</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
             <li><a href="#harga">Harga</a></li>
             <li><a href="#lokasi">Lokasi</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -701,7 +758,7 @@
 </header>
 
 
-<!-- PAIN POINTS (Struktur psikologi konversi ala Fauzan Azzam) -->
+<!-- PAIN POINTS -->
 
 <section class="pain-section">
 
@@ -952,6 +1009,91 @@
 </section>
 
 
+<!-- TESTIMONIALS (Bagian Testimoni Baru dari Ulasan Klien) -->
+
+<section id="testimoni" class="testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>TESTIMONI KLIEN</span>
+            <h2>Kata Mereka yang Sudah Memakai Jasa Kami</h2>
+        </div>
+
+        <div class="testimonials-grid">
+
+            <div class="testimonial-card">
+                <div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Aku jarang makeup, tapi sekalinya ketemu make up artist semarang langsung cocok. PL dan hasilnya bersahabat banget, dan buagusss hasilnya. Okelah pokoknya, luvvvv poll!"</p>
+                </div>
+                <div class="client-info">
+                    <h4>Keyla Qian</h4>
+                    <span>Klien MUA Semarang</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Terima kasih ya Kak Elisabeth MUA untuk make up mamah saya bagus sekali, tahan lama juga sampe malam. Kemarin baru foto studio jam 8 malam dan make up nya masih bagus. Recommended bgtt!"</p>
+                </div>
+                <div class="client-info">
+                    <h4>Ola Novia</h4>
+                    <span>Klien Wedding / Keluarga</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Suka banget sama hasilnya! Request look yang bold glam buat lomba kartini dan beneran hasilnya oke banget. Kakaknya ramah banget. Yang lagi hunting MUA Semarang nggak salah pilih!"</p>
+                </div>
+                <div class="client-info">
+                    <h4>Grace Jocellyn88</h4>
+                    <span>Klien Lomba / Event</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Demi make up disini super duper bagus banget, selesai ngalis diliatin dulu suka atau enggak. Make up nya bener-bener tahan lama anti longsor anti badai, sungguh ku jadi pd dan merasa cantik!"</p>
+                </div>
+                <div class="client-info">
+                    <h4>Farah Biananda</h4>
+                    <span>Klien Event / Pesta</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Ke Semarang utk acara Sanjit, trus nanya ke ChatGPT dan diberikan nama Elisabeth utk MUA yg handal di kota Semarang. Ternyata hasilnya sesuai yg aku harapkan, flawless makeup dan hairdo sederhana!"</p>
+                </div>
+                <div class="client-info">
+                    <h4>Irma H Sinurat</h4>
+                    <span>Klien Sanjit & Event</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card" style="background: linear-gradient(135deg, #a85d72 0%, #8a5362 100%); color: white;">
+                <div>
+                    <div class="stars" style="color: #ffd700;">⭐⭐⭐⭐⭐</div>
+                    <p style="color: #fcebefe0;">"Ingin merasakan hasil makeup yang tahan seharian, anti longsor, dan bikin kamu tampil paling percaya diri di hari spesialmu?"</p>
+                </div>
+                <div>
+                    <a href="#kontak" class="button" style="background: white; color: #8a5362; width: 100%; padding: 12px; font-size: 14px; box-shadow: none;">Booking Jadwalmu Sekarang</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <!-- PRICE -->
 
 <section id="harga" class="price-section">
@@ -1011,7 +1153,7 @@
 
         <p>
             Elisabeth Makeup Artist melayani <strong>jasa makeup di Semarang</strong> 
-            dan area sekitarnya. Berlokasi di <strong>Kampoeng Symphony B35 RT 015 RW 001, Pudak Payung, Banyumanik, Kota Semarang</strong>. 
+            and area sekitarnya. Berlokasi di <strong>Kampoeng Symphony B35 RT 015 RW 001, Pudak Payung, Banyumanik, Kota Semarang</strong>. 
             Melayani kunjungan langsung maupun <em>home service</em> ke tempat Anda. Temukan ulasan serta titik operasional resmi kami sebagai <strong>makeup artist Semarang</strong> 
             pilihan terbaik melalui peta di bawah ini.
         </p>
